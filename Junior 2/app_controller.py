@@ -19,7 +19,7 @@ def home():
 
 @app.route('/vattenkonsumtion')
 def vattenkonsumtion(): # vi kan stoppa in en lista (från databas) som en parameter
-   list = [1,2,3,4,5,6,7]
+   list = [1,2,32,4,5,6,7]
    df = pd.DataFrame({
       'Veckodag': ['Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag',
       'Lördag', 'Söndag'],
