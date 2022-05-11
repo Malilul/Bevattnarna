@@ -1,0 +1,15 @@
+<!--Hette förut index-->
+{% extends "hem.html" %}
+
+{% block body %}
+<section class="col-md-6 m-4">
+    <form action="/add" method="get">
+        <label> KEY: </label><input type="text" name="key"><br>
+        <label> VALUE: </label><input type="text" name="value"><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+{% endblock %}
+
+<!--Detta stycke gör att knapparna/rutorna för key, value och submit syns på förstasidan -->
+

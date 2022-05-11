@@ -1,0 +1,113 @@
+<!--hette förut layout-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="../static/js/main.js"></script>
+    <title>Bevattnarna</title>
+</head>
+<!--Här gör vi den svarta rutan där det står add, print, clear-->
+<body class="m-6">
+
+<style>
+
+.button {
+  border: solid;
+  color: white;
+  padding: 2px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.button1 {
+  background-color: white;
+  color: white;
+  border: 2px solid light;
+  font-family: 'Courier New';
+  width: 230px;
+}
+
+.button1:hover {
+  background-color: #afdc5a;
+  color: white;
+
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid light;
+  font-family: 'Courier New';
+  width: 230px;
+}
+
+.button2:hover {
+  background-color: #afdc5a;
+  color: white;
+}
+.button1 {background-color: #8EB249;} /* Dark green */
+.button2 {background-color: #8EB249;} /* Dark green */
+
+
+
+</style>
+<!--    <nav class="navbar navbar-expand-lg bg-dark">-->
+    <nav class="navbar navbar-light" style="background-color: #223722;">
+    <button class="button button1"><a class="nav-link text-light" href="/">Hem</a></button>
+    <button class="button button2"> <a class="nav-link text-light" href="/vattenkonsumtion">Vattenkonsumtion</a></button>
+    <button class="button button2"><a class="nav-link text-light" href="/temperatur">Temperatur</a></button>
+    <button class="button button2"><a class="nav-link text-light" href="/antalvattningar">Antal vattningar</a></button>
+    <button class="button button2"> <a class="nav-link text-light" href="/bevattning">Ställ in bevattning</a></button>
+</nav>
+
+
+
+<a class="navbar-brand" href="/">
+      <div class="logga1.png">
+            <img src="image" class="img-fluid">
+      </div>
+</a>
+
+
+
+
+
+<div class="d-flex justify-content-lg-center">
+{% block body %} {% endblock %}
+</div>
+
+<footer class="text-center">
+
+
+<!--    Test för text -->
+    <h1 class="nav-link text-light">Alla växter behöver vatten... </h1>
+<p class="nav-link text-light">
+ Här kan vi stoppa lite text och information om vårt bevattningssystem kanske
+</p>
+<p class="nav-link text-light">
+Här kan vi alltid stoppa lite mer text om det skulle behövas, det är ju alltid bra att ha lite extra plats, eller hur?
+</p>
+
+
+    <a>
+    <div>
+
+    </div>
+
+    </a>
+
+<!--    <button onclick={javascript:visit_random()}> Statistik </button>-->
+<!--    eller <button onclick={javascript:visit_random()}> Funktioner </button>-->
+
+</footer>
+</body>
+</html>

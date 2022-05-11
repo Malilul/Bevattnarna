@@ -1,0 +1,22 @@
+{% extends "hem.html" %}
+
+{% block body %}
+    <section class="col-md-6">
+        <table class="table table-stripped m-4">
+            <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+            {% for key, value in dictionary.items() %}
+                <tr>
+                    <td> {{ key }} </td>
+                    <td> {{ value }} </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </section>
+
+{% endblock %}

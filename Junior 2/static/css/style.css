@@ -1,0 +1,29 @@
+
+
+body {
+    background: url(sprouty.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-color: lavender;
+}
+
+body:after {
+    content: " ";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #cfa;
+    opacity: .10;
+    z-index: -1;
+}
+
+ .logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
