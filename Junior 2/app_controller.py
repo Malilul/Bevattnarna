@@ -64,8 +64,6 @@ def bevattning():
     load()
     return render_template('bevattning.html')
 
-TEST123
-test123
 
 
 if __name__ == '__main__':
